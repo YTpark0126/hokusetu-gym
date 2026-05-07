@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>北摂ジムナビ｜豊中・箕面・池田・吹田の24時間ジム比較【2026年最新】</title>
+  <meta name="description" content="豊中・箕面・池田・吹田エリアの24時間ジム21店舗を徹底比較。月額料金・入会金・パワーラック数・学割まで一覧で確認。北摂エリア在住の学生・20代向けに実際の情報をまとめました。">
+  <meta property="og:title" content="北摂ジムナビ｜豊中・箕面・池田・吹田の24時間ジム比較">
+  <meta property="og:description" content="北摂エリアの24時間ジム21店舗を料金・設備で徹底比較。学割・パワーラック・シャワーの有無まで一目でわかる。">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"北摂ジムナビ","description":"北摂エリアの24時間ジムを比較・紹介するサイト"}</script>
+  <style>
+    :root{--bg:#0d0d0d;--bg2:#141414;--bg3:#1a1a1a;--card:#181818;--border:#2a2a2a;--border2:#333;--accent:#c8f135;--accent2:#a8d420;--text:#f0f0f0;--text2:#aaa;--text3:#666;--blue:#4a9eff;--green:#4ecb71;--orange:#ff8c42;--purple:#b57cff;}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:100;background:rgba(13,13,13,.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;}
+    .nav-logo{font-family:'Oswald',sans-serif;font-size:20px;font-weight:700;color:var(--accent);letter-spacing:1px;cursor:pointer;}
+    .nav-links{display:flex;gap:24px;}
+    .nav-links a{font-size:13px;color:var(--text2);text-decoration:none;font-weight:500;transition:color .2s;cursor:pointer;}
+    .nav-links a:hover{color:var(--accent);}
+    .nav-cta{font-size:12px;font-weight:700;padding:7px 16px;border-radius:6px;background:var(--accent);color:#0d0d0d;border:none;cursor:pointer;transition:background .2s;}
+    .nav-cta:hover{background:var(--accent2);}
+
+    /* HERO */
+    .hero{position:relative;padding:72px 24px 56px;max-width:1000px;margin:0 auto;overflow:hidden;}
+    .hero::before{content:'';position:absolute;top:-40px;right:-60px;width:500px;height:500px;background:radial-gradient(circle,rgba(200,241,53,.08) 0%,transparent 70%);pointer-events:none;}
+    .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;color:var(--accent);letter-spacing:2px;text-transform:uppercase;background:rgba(200,241,53,.1);border:1px solid rgba(200,241,53,.25);padding:5px 12px;border-radius:4px;margin-bottom:20px;}
+    .hero h1{font-size:clamp(28px,5vw,48px);font-weight:900;line-height:1.2;margin-bottom:16px;}
+    .hero h1 em{font-style:normal;color:var(--accent);}
+    .hero-sub{font-size:15px;color:var(--text2);max-width:560px;margin-bottom:32px;line-height:1.8;}
+    .hero-stats{display:flex;gap:32px;flex-wrap:wrap;}
+    .stat-num{font-family:'Oswald',sans-serif;font-size:32px;font-weight:700;color:var(--accent);line-height:1;}
+    .stat-label{font-size:12px;color:var(--text3);margin-top:4px;}
+
+    /* TABS */
+    .tab-nav{max-width:1000px;margin:0 auto;padding:0 24px;display:flex;gap:4px;border-bottom:1px solid var(--border);}
+    .tab-btn{font-size:13px;font-weight:700;padding:12px 20px;background:none;border:none;color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;transition:all .2s;margin-bottom:-1px;}
+    .tab-btn:hover{color:var(--text);}
+    .tab-btn.active{color:var(--accent);border-bottom-color:var(--accent);}
+    .section{display:none;}
+    .section.active{display:block;}
+
+    /* COMPARE */
+    .compare-wrap{max-width:1000px;margin:0 auto;padding:32px 24px;}
+    .filters-panel{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:20px;}
+    .filter-group{margin-bottom:14px;}
+    .filter-group:last-child{margin-bottom:0;}
+    .filter-title{font-size:11px;font-weight:700;color:var(--text3);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;}
+    .filter-row{display:flex;gap:6px;flex-wrap:wrap;}
+    .fbtn{font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;border:1px solid var(--border2);background:transparent;color:var(--text2);cursor:pointer;transition:all .15s;}
+    .fbtn:hover{border-color:var(--text3);color:var(--text);}
+    .fbtn.active{background:var(--accent);color:#0d0d0d;border-color:var(--accent);}
+    .fbtn.area.active{background:var(--blue);border-color:var(--blue);color:#fff;}
+    .controls-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px;}
+    .count-badge{font-size:13px;color:var(--text3);}
+    .count-badge strong{color:var(--accent);}
+    select{font-size:12px;font-family:inherit;padding:7px 12px;border-radius:8px;border:1px solid var(--border2);background:var(--card);color:var(--text);cursor:pointer;}
+    .gym-list{display:flex;flex-direction:column;gap:10px;}
+    .gym-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px;transition:border-color .2s,transform .15s;}
+    .gym-card:hover{border-color:var(--border2);transform:translateY(-1px);}
+    .gym-card.featured{border-color:rgba(200,241,53,.4);background:linear-gradient(135deg,#181818 0%,#1c1f14 100%);}
+    .gym-card.featured::before{content:'★ おすすめ';display:block;font-size:10px;font-weight:700;color:var(--accent);letter-spacing:1px;margin-bottom:10px;}
+    .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px;}
+    .card-left{flex:1;min-width:0;}
+    .name-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:5px;}
+    .gym-name{font-size:15px;font-weight:700;}
+    .area-pill{font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;background:var(--bg3);color:var(--text3);}
+    .badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;}
+    .badge-popular{background:rgba(74,158,255,.15);color:var(--blue);}
+    .badge-cheap{background:rgba(78,203,113,.15);color:var(--green);}
+    .badge-new{background:rgba(255,140,66,.15);color:var(--orange);}
+    .badge-student{background:rgba(181,124,255,.15);color:var(--purple);}
+    .price-block{text-align:right;flex-shrink:0;}
+    .price-main{font-family:'Oswald',sans-serif;font-size:26px;font-weight:700;}
+    .price-unit{font-size:11px;color:var(--text3);}
+    .init-fee{font-size:11px;color:var(--text3);margin-top:2px;}
+    .init-free{color:var(--green);font-weight:700;}
+    .student-banner{background:rgba(181,124,255,.1);border:1px solid rgba(181,124,255,.2);border-radius:6px;padding:6px 10px;font-size:12px;color:var(--purple);margin-bottom:10px;}
+    .tag-row{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px;}
+    .tag{font-size:11px;font-weight:600;padding:3px 9px;border-radius:4px;border:1px solid var(--border2);color:var(--text3);}
+    .tag.on{border-color:rgba(78,203,113,.3);color:var(--green);background:rgba(78,203,113,.08);}
+    .tag.off{opacity:.3;text-decoration:line-through;}
+    .specs-row{display:flex;gap:20px;flex-wrap:wrap;background:var(--bg2);border-radius:8px;padding:8px 12px;margin-bottom:10px;}
+    .spec{font-size:12px;display:flex;gap:5px;align-items:center;}
+    .spec-k{color:var(--text3);}
+    .spec-v{font-weight:700;}
+    .spec-u{color:var(--text3);}
+    .note{font-size:12px;color:var(--text2);background:var(--bg2);border-radius:6px;padding:6px 10px;margin-bottom:10px;}
+    .card-bottom{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:10px;gap:8px;flex-wrap:wrap;}
+    .station{font-size:12px;color:var(--text3);}
+    .btn-row{display:flex;gap:6px;}
+    .cta-link{font-size:12px;font-weight:700;padding:6px 14px;border-radius:6px;background:transparent;border:1px solid var(--border2);color:var(--text2);text-decoration:none;transition:all .15s;white-space:nowrap;cursor:pointer;}
+    .cta-link:hover{border-color:var(--accent);color:var(--accent);}
+    .cta-detail{font-size:12px;font-weight:700;padding:6px 14px;border-radius:6px;background:rgba(200,241,53,.1);border:1px solid rgba(200,241,53,.3);color:var(--accent);text-decoration:none;transition:all .15s;white-space:nowrap;cursor:pointer;}
+    .cta-detail:hover{background:rgba(200,241,53,.2);}
+    .empty{text-align:center;padding:60px 20px;color:var(--text3);font-size:14px;}
+    .disclaimer{background:rgba(255,82,82,.07);border:1px solid rgba(255,82,82,.15);border-radius:8px;padding:10px 14px;font-size:11px;color:var(--text3);margin-bottom:20px;line-height:1.6;}
+    .campaign-hint{font-size:10px;color:var(--orange);font-weight:600;}
+    .campaign-banner{background:rgba(255,140,66,.1);border:1px solid rgba(255,140,66,.25);border-radius:6px;padding:7px 11px;font-size:12px;color:var(--orange);margin-bottom:10px;line-height:1.6;}
+    .campaign-empty{background:rgba(255,140,66,.05);border:1px dashed rgba(255,140,66,.3);border-radius:6px;padding:10px 12px;font-size:12px;color:var(--text3);margin-bottom:10px;line-height:1.6;}
+    .campaign-empty::before{content:'✏️ ';}
+
+    /* GYM DETAIL PAGE */
+    .gym-detail{max-width:800px;margin:0 auto;padding:32px 24px;}
+    .back-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--text3);background:none;border:none;cursor:pointer;padding:0;margin-bottom:24px;transition:color .2s;}
+    .back-btn:hover{color:var(--accent);}
+    .detail-hero{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;margin-bottom:24px;}
+    .detail-hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:16px;}
+    .detail-name{font-size:clamp(20px,4vw,28px);font-weight:900;margin-bottom:8px;}
+    .detail-area{font-size:12px;color:var(--text3);margin-bottom:8px;}
+    .detail-price-block{text-align:right;}
+    .detail-price{font-family:'Oswald',sans-serif;font-size:40px;font-weight:700;color:var(--accent);line-height:1;}
+    .detail-price-unit{font-size:13px;color:var(--text3);}
+    .detail-init{font-size:13px;color:var(--text3);margin-top:4px;}
+    .detail-student{background:rgba(181,124,255,.1);border:1px solid rgba(181,124,255,.25);border-radius:8px;padding:10px 14px;font-size:13px;color:var(--purple);margin-top:12px;}
+    .detail-cta{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
+    .detail-cta a,.detail-cta button{font-size:13px;font-weight:700;padding:10px 20px;border-radius:8px;text-decoration:none;cursor:pointer;transition:all .2s;}
+    .btn-official{background:var(--accent);color:#0d0d0d;border:none;}
+    .btn-official:hover{background:var(--accent2);}
+    .btn-map{background:transparent;border:1px solid var(--border2);color:var(--text2);}
+    .btn-map:hover{border-color:var(--accent);color:var(--accent);}
+
+    .detail-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-bottom:24px;}
+    .detail-stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px;}
+    .detail-stat-label{font-size:11px;color:var(--text3);margin-bottom:6px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+    .detail-stat-value{font-size:18px;font-weight:700;}
+    .detail-stat-value.good{color:var(--green);}
+    .detail-stat-value.warn{color:var(--orange);}
+    .detail-stat-value.bad{color:var(--text3);}
+
+    .detail-section{margin-bottom:28px;}
+    .detail-section h2{font-size:16px;font-weight:700;margin-bottom:14px;padding-left:10px;border-left:3px solid var(--accent);}
+    .equip-grid{display:flex;gap:8px;flex-wrap:wrap;}
+    .equip-tag{font-size:12px;font-weight:600;padding:5px 12px;border-radius:6px;border:1px solid var(--border2);color:var(--text3);}
+    .equip-tag.yes{background:rgba(78,203,113,.08);border-color:rgba(78,203,113,.3);color:var(--green);}
+    .equip-tag.no{opacity:.35;text-decoration:line-through;}
+
+    .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+    .pros,.cons{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px;}
+    .pros h3{font-size:13px;font-weight:700;color:var(--green);margin-bottom:10px;}
+    .cons h3{font-size:13px;font-weight:700;color:var(--orange);margin-bottom:10px;}
+    .pros ul,.cons ul{padding-left:16px;}
+    .pros li,.cons li{font-size:13px;color:var(--text2);line-height:1.8;}
+
+    .plan-table{width:100%;border-collapse:collapse;}
+    .plan-table th{font-size:12px;padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);color:var(--text3);background:var(--bg2);}
+    .plan-table td{font-size:13px;padding:10px 12px;border-bottom:1px solid var(--border);color:var(--text2);}
+    .plan-table td:first-child{font-weight:700;color:var(--text);}
+    .price-highlight{color:var(--accent);font-family:'Oswald',sans-serif;font-size:16px;font-weight:700;}
+
+    .access-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;}
+    .access-row{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px;font-size:13px;}
+    .access-row:last-child{margin-bottom:0;}
+    .access-icon{font-size:16px;flex-shrink:0;margin-top:1px;}
+    .access-text{color:var(--text2);}
+
+    .nearby-list{display:flex;flex-direction:column;gap:8px;}
+    .nearby-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:border-color .2s;}
+    .nearby-item:hover{border-color:var(--accent);}
+    .nearby-name{font-size:13px;font-weight:700;}
+    .nearby-price{font-size:12px;color:var(--text3);}
+    .nearby-arrow{color:var(--text3);font-size:12px;}
+
+    /* ARTICLES */
+    .articles-wrap{max-width:1000px;margin:0 auto;padding:32px 24px;}
+    .articles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;}
+    .article-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;cursor:pointer;transition:border-color .2s,transform .15s;text-decoration:none;color:inherit;display:block;}
+    .article-card:hover{border-color:var(--accent);transform:translateY(-2px);}
+    .article-thumb{height:140px;display:flex;align-items:center;justify-content:center;font-size:48px;}
+    .article-thumb.green{background:linear-gradient(135deg,#0f2a15,#1a3d1f);}
+    .article-thumb.blue{background:linear-gradient(135deg,#0a1929,#0d2940);}
+    .article-thumb.orange{background:linear-gradient(135deg,#2a1500,#3d2000);}
+    .article-thumb.purple{background:linear-gradient(135deg,#1a0d2a,#281040);}
+    .article-body{padding:16px;}
+    .article-cat{font-size:10px;font-weight:700;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;}
+    .article-title{font-size:14px;font-weight:700;line-height:1.5;margin-bottom:8px;}
+    .article-desc{font-size:12px;color:var(--text2);line-height:1.6;}
+    .article-meta{font-size:11px;color:var(--text3);margin-top:12px;}
+
+    /* ARTICLE DETAIL */
+    .article-detail{max-width:720px;margin:0 auto;padding:32px 24px;}
+    .article-detail h1{font-size:clamp(20px,4vw,28px);font-weight:900;line-height:1.3;margin-bottom:16px;}
+    .article-detail .meta{font-size:12px;color:var(--text3);margin-bottom:28px;}
+    .article-detail h2{font-size:18px;font-weight:700;margin:32px 0 12px;padding-left:12px;border-left:3px solid var(--accent);}
+    .article-detail h3{font-size:15px;font-weight:700;margin:20px 0 8px;}
+    .article-detail p{font-size:14px;color:var(--text2);line-height:1.9;margin-bottom:14px;}
+    .article-detail ul,.article-detail ol{padding-left:20px;margin-bottom:14px;}
+    .article-detail li{font-size:14px;color:var(--text2);line-height:1.9;margin-bottom:4px;}
+    .article-detail table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:20px;}
+    .article-detail th{padding:10px;text-align:left;border-bottom:1px solid var(--border);background:var(--bg2);color:var(--text2);}
+    .article-detail td{padding:10px;border-bottom:1px solid var(--border);color:var(--text2);}
+    .highlight-box{background:rgba(200,241,53,.07);border:1px solid rgba(200,241,53,.2);border-radius:8px;padding:16px 18px;margin:20px 0;}
+    .highlight-box p{margin:0;color:var(--text);font-weight:500;}
+    .ranking-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:10px;display:flex;gap:14px;align-items:flex-start;}
+    .rank-num{font-family:'Oswald',sans-serif;font-size:28px;font-weight:700;color:var(--accent);line-height:1;min-width:36px;}
+    .rank-name{font-size:14px;font-weight:700;margin-bottom:4px;}
+    .rank-desc{font-size:12px;color:var(--text2);line-height:1.6;}
+    .rank-price{font-size:12px;color:var(--green);font-weight:700;margin-top:4px;}
+
+    /* ABOUT */
+    .about-wrap{max-width:720px;margin:0 auto;padding:48px 24px;}
+    .about-wrap h2{font-size:22px;font-weight:900;margin-bottom:16px;}
+    .about-wrap p{font-size:14px;color:var(--text2);line-height:1.9;margin-bottom:14px;}
+    .faq-item{border-top:1px solid var(--border);padding:18px 0;}
+    .faq-q{font-size:14px;font-weight:700;margin-bottom:8px;}
+    .faq-a{font-size:13px;color:var(--text2);line-height:1.8;}
+
+    footer{border-top:1px solid var(--border);padding:40px 24px;text-align:center;}
+    .footer-logo{font-family:'Oswald',sans-serif;font-size:22px;font-weight:700;color:var(--accent);margin-bottom:8px;}
+    footer p{font-size:12px;color:var(--text3);line-height:1.8;}
+    footer a{color:var(--text3);}
+    .rizap-banner{max-width:1000px;margin:0 auto 0;padding:24px 24px 0;}
+    .rizap-inner{background:linear-gradient(135deg,#1a0a0a,#2d0f0f);border:1px solid rgba(255,60,60,.25);border-radius:14px;padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+    .rizap-left{}
+    .rizap-eyebrow{font-size:10px;font-weight:700;color:#ff6b6b;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;}
+    .rizap-title{font-size:18px;font-weight:900;line-height:1.3;margin-bottom:6px;}
+    .rizap-title em{font-style:normal;color:#ff6b6b;}
+    .rizap-desc{font-size:12px;color:var(--text2);line-height:1.6;}
+    .rizap-btn{display:inline-block;font-size:13px;font-weight:700;padding:12px 24px;border-radius:8px;background:linear-gradient(135deg,#ff3c3c,#cc0000);color:#fff;text-decoration:none;white-space:nowrap;transition:opacity .2s;flex-shrink:0;}
+    .rizap-btn:hover{opacity:.85;}
+    .rizap-note{font-size:10px;color:var(--text3);margin-top:4px;text-align:right;}
+    @media(max-width:600px){.nav-links{display:none;}.hero{padding:48px 16px 40px;}.compare-wrap,.articles-wrap,.article-detail,.about-wrap,.gym-detail{padding-left:16px;padding-right:16px;}.pros-cons{grid-template-columns:1fr;}}
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NY21LMMP5Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NY21LMMP5Z');
+  </script>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo" onclick="showTab('compare')">北摂ジムナビ</span>
+  <div class="nav-links">
+    <a onclick="showTab('compare')">ジム比較</a>
+    <a onclick="showTab('articles')">記事・ランキング</a>
+    <a onclick="showTab('about')">このサイトについて</a>
+  </div>
+  <button class="nav-cta" onclick="showTab('compare')">ジムを探す</button>
+</nav>
+
+<!-- HERO (hidden when in detail view) -->
+<div id="hero-area">
+<div class="hero">
+  <div class="hero-eyebrow">📍 北摂エリア特化 2026年最新版</div>
+  <h1>豊中・箕面・池田・吹田<br><em>24時間ジム</em>を全部比較</h1>
+  <p class="hero-sub">月額・入会金・パワーラック数・学割まで一目でわかる。北摂エリアの学生・20代のためのジム比較サイト。</p>
+  <div class="hero-stats">
+    <div class="stat-item"><div class="stat-num">21</div><div class="stat-label">店舗掲載</div></div>
+    <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">対応エリア</div></div>
+    <div class="stat-item"><div class="stat-num">¥3,278〜</div><div class="stat-label">最安月額</div></div>
+  </div>
+</div>
+<div class="tab-nav">
+  <button class="tab-btn active" onclick="showTab('compare')">🏋️ ジム比較</button>
+  <button class="tab-btn" onclick="showTab('articles')">📝 記事・ランキング</button>
+  <button class="tab-btn" onclick="showTab('about')">ℹ️ このサイトについて</button>
+</div>
+</div>
+
+<!-- COMPARE -->
+<div id="tab-compare" class="section active">
+<div class="compare-wrap">
+  <div class="disclaimer">※掲載情報は調査時点のものです。最新の料金・サービスは各ジム公式サイトでご確認ください。</div>
+  <div class="filters-panel">
+    <div class="filter-group">
+      <div class="filter-title">📍 エリア</div>
+      <div class="filter-row" id="area-filters">
+        <button class="fbtn area active" onclick="setArea('all',this)">すべて</button>
+        <button class="fbtn area" onclick="setArea('豊中',this)">豊中</button>
+        <button class="fbtn area" onclick="setArea('箕面',this)">箕面</button>
+        <button class="fbtn area" onclick="setArea('池田',this)">池田</button>
+        <button class="fbtn area" onclick="setArea('吹田',this)">吹田</button>
+      </div>
+    </div>
+    <div class="filter-group">
+      <div class="filter-title">🔧 条件</div>
+      <div class="filter-row" id="cond-filters">
+        <button class="fbtn active" onclick="setCond('all',this)">すべて</button>
+        <button class="fbtn" onclick="setCond('cheap',this)">月額5,000円以下</button>
+        <button class="fbtn" onclick="setCond('no_init',this)">入会金0円</button>
+        <button class="fbtn" onclick="setCond('shower',this)">シャワーあり</button>
+        <button class="fbtn" onclick="setCond('free_weight',this)">フリーウェイト</button>
+        <button class="fbtn" onclick="setCond('power_rack',this)">パワーラックあり</button>
+        <button class="fbtn" onclick="setCond('student',this)">学割あり</button>
+      </div>
+    </div>
+  </div>
+  <div class="controls-row">
+    <div class="count-badge" id="count-row">全20件</div>
+    <select onchange="sortGyms(this.value)">
+      <option value="price">月額が安い順</option>
+      <option value="init">入会金が安い順</option>
+      <option value="racks">パワーラック数順</option>
+      <option value="name">名前順</option>
+    </select>
+  </div>
+  <div class="gym-list" id="gym-grid"></div>
+
+  <div style="margin-top:24px;background:linear-gradient(135deg,#1a0a0a,#2d0f0f);border:1px solid rgba(255,60,60,.2);border-radius:12px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+    <div>
+      <div style="font-size:11px;font-weight:700;color:#ff6b6b;letter-spacing:1px;margin-bottom:4px;">💪 PR</div>
+      <div style="font-size:14px;font-weight:700;margin-bottom:4px;">どのジムも続かなかった人へ。<span style="color:#ff6b6b;">RIZAPは結果にコミット。</span></div>
+      <div style="font-size:12px;color:var(--text2);">専属トレーナー＋食事管理で確実に変わる。まずは無料カウンセリングから。</div>
+    </div>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B3KUM+CY6FG2+3D3Q+6ARKX" target="_blank" rel="noopener" style="display:inline-block;font-size:12px;font-weight:700;padding:10px 20px;border-radius:8px;background:linear-gradient(135deg,#ff3c3c,#cc0000);color:#fff;text-decoration:none;white-space:nowrap;flex-shrink:0;">無料相談はこちら →</a>
+  </div>
+</div>
+</div>
+
+<!-- GYM DETAIL -->
+<div id="tab-gym-detail" class="section">
+  <div class="gym-detail" id="gym-detail-content"></div>
+</div>
+
+<!-- ARTICLES -->
+<div id="tab-articles" class="section">
+  <div id="articles-list">
+  <div class="articles-wrap">
+    <h2 style="font-size:20px;font-weight:900;margin-bottom:20px;">記事・ランキング</h2>
+    <div class="articles-grid">
+      <a class="article-card" href="#" onclick="showArticle('ranking_cheap');return false;">
+        <div class="article-thumb green">💴</div>
+        <div class="article-body"><div class="article-cat">ランキング</div><div class="article-title">北摂で月額が安い24時間ジム ランキング TOP5【2026年】</div><div class="article-desc">コスパ重視で選ぶなら絶対チェック。入会金込みの実質コストも計算。</div><div class="article-meta">2026.04 更新</div></div>
+      </a>
+      <a class="article-card" href="#" onclick="showArticle('guide_student');return false;">
+        <div class="article-thumb purple">🎓</div>
+        <div class="article-body"><div class="article-cat">ガイド</div><div class="article-title">阪大・関大・近大生必見！北摂エリアの学割ジム完全ガイド</div><div class="article-desc">北摂の大学に通う学生向けに、学割・通いやすさ・設備を徹底比較。</div><div class="article-meta">2026.04 更新</div></div>
+      </a>
+      <a class="article-card" href="#" onclick="showArticle('guide_powerrack');return false;">
+        <div class="article-thumb orange">🏋️</div>
+        <div class="article-body"><div class="article-cat">ガイド</div><div class="article-title">本格トレーニングしたい人向け。北摂のパワーラックが多いジムまとめ</div><div class="article-desc">スクワット・デッドリフト・ベンチプレスを待たずにやりたい人必見。</div><div class="article-meta">2026.04 更新</div></div>
+      </a>
+      <a class="article-card" href="#" onclick="showArticle('compare_chains');return false;">
+        <div class="article-thumb blue">⚡</div>
+        <div class="article-body"><div class="article-cat">比較</div><div class="article-title">エニタイムvsワールドプラスvsZoam。北摂で選ぶならどれ？</div><div class="article-desc">北摂エリアで店舗数が多い3チェーンを料金・設備・使い勝手で比較。</div><div class="article-meta">2026.04 更新</div></div>
+      </a>
+    </div>
+  </div>
+  </div>
+  <div id="article-detail" style="display:none;">
+    <div class="article-detail">
+      <button class="back-btn" onclick="backToArticles()">← 記事一覧に戻る</button>
+      <div id="article-content"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="tab-about" class="section">
+<div class="about-wrap">
+  <h2>このサイトについて</h2>
+  <p>「北摂ジムナビ」は、豊中市・箕面市・池田市・吹田市エリアに特化した24時間ジム比較サイトです。</p>
+  <p>全国規模の大手比較サイトでは北摂エリアの情報が少なく、実際に通っている人・これから通いたい学生・20代の方が求める「リアルな比較情報」が足りないと感じたことが制作のきっかけです。</p>
+  <p>月額料金・入会金・パワーラック数・学割の有無など、ジム選びに必要な情報を一箇所にまとめています。</p>
+  <h2 style="font-size:18px;margin-top:40px;margin-bottom:16px;">よくある質問</h2>
+  <div class="faq-item"><div class="faq-q">Q. 情報の正確性はどう担保していますか？</div><div class="faq-a">各ジムの公式サイト・Google Maps・直接確認などをもとに掲載しています。料金・サービスは変更される場合があるため、最新情報は必ず各ジムの公式サイトでご確認ください。</div></div>
+  <div class="faq-item"><div class="faq-q">Q. 掲載していないジムを追加してほしい</div><div class="faq-a">北摂エリアのマシン特化型24時間ジムであれば掲載を検討します。お問い合わせよりご連絡ください。</div></div>
+  <div class="faq-item"><div class="faq-q">Q. ジム情報が古い・間違っている</div><div class="faq-a">情報の修正依頼はお問い合わせよりお知らせください。できる限り迅速に対応します。</div></div>
+  <div class="faq-item"><div class="faq-q">Q. 広告・掲載強化について</div><div class="faq-a">掲載ジムのオーナー・スタッフ様からの情報提供・掲載強化のご相談は随時受け付けています。</div></div>
+</div>
+</div>
+
+<!-- RIZAP BANNER -->
+<div class="rizap-banner">
+  <div class="rizap-inner">
+    <div class="rizap-left">
+      <div class="rizap-eyebrow">📢 PR・本気で変わりたい人へ</div>
+      <div class="rizap-title">マシンジムで<em>結果が出なかった</em>なら<br>RIZAPという選択肢</div>
+      <div class="rizap-desc">完全個室・専属トレーナー・食事管理までサポート。無料カウンセリング受付中。</div>
+    </div>
+    <div>
+      <a class="rizap-btn" href="https://px.a8.net/svt/ejp?a8mat=4B3KUM+CY6FG2+3D3Q+6ARKX" target="_blank" rel="noopener nofollow">無料カウンセリングを予約 →</a>
+      <div class="rizap-note">※広告リンクです</div>
+    </div>
+  </div>
+</div>
+
+<!-- MYPROTEIN BANNER -->
+<div style="max-width:1000px;margin:16px auto 0;padding:0 24px;">
+  <div style="background:linear-gradient(135deg,#0a1a0a,#0f2d0f);border:1px solid rgba(78,203,113,.2);border-radius:14px;padding:20px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+    <div>
+      <div style="font-size:10px;font-weight:700;color:var(--green);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">💊 PR・トレーニングのお供に</div>
+      <div style="font-size:16px;font-weight:900;margin-bottom:6px;">世界No.1スポーツ栄養ブランド<br><span style="color:var(--green);">Myprotein</span>を安く買うなら今</div>
+      <div style="font-size:12px;color:var(--text2);">新規購入でお得なクーポンあり。プロテイン・サプリを豊富に取り揃え。</div>
+    </div>
+    <div style="text-align:center;">
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B3KUN+1SW9PU+45DI+609HT" rel="nofollow" target="_blank">
+        <img border="0" width="300" height="250" alt="Myprotein" src="https://www26.a8.net/svt/bgt?aid=260507471109&wid=001&eno=01&mid=s00000019359001009000&mc=1">
+      </a>
+      <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B3KUN+1SW9PU+45DI+609HT" alt="">
+      <div style="font-size:10px;color:var(--text3);margin-top:4px;">※広告リンクです</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">北摂ジムナビ</div>
+  <p>豊中・箕面・池田・吹田の24時間ジム比較サイト<br>掲載情報は各ジム公式サイトでご確認ください<br><a href="#">プライバシーポリシー</a>　<a href="#">お問い合わせ</a></p>
+</footer>
+
+<script>
+const gyms=[
+  {id:'chocozap',name:'chocoZAP（チョコザップ）',area:'豊中',price:3278,init:0,shower:false,freeWeight:false,powerRack:false,sqm:null,powerRacks:0,studentPlan:false,studentPrice:null,stations:['豊中市内 多数店舗'],badge:'cheap',badgeLabel:'最安クラス',featured:false,url:'https://www.chocozap.jp',
+    address:'豊中市内 複数店舗',mapUrl:'https://maps.google.com/?q=chocoZAP+豊中',
+    hours:'24時間365日',parking:false,
+    equipment:['有酸素マシン','スパ・エステ設備'],
+    noEquipment:['パワーラック','フリーウェイト','シャワー'],
+    plans:[{name:'通常プラン',price:'¥3,278',note:'税込・月額'}],
+    pros:['月額が北摂最安クラス','入会金0円','脱毛・エステも使える','全国どこでも使える'],
+    cons:['パワーラックなし','フリーウェイトなし','シャワーなし','本格トレーニングには向かない'],
+    summary:'RIZAPが運営するコンビニ感覚の小型ジム。マシン数は少ないが月額¥3,278の手軽さが魅力。脱毛・エステ設備もついており、とにかく安くジムを始めたい人向け。',
+    note:'コンビニ感覚で通える超小型ジム。本格トレには向かないが手軽さは最強。'},
+
+  {id:'zoam-toyonaka',name:'Zoam FITNESS 豊中店',area:'豊中',price:4290,init:5000,shower:true,freeWeight:true,powerRack:true,sqm:190,powerRacks:3,studentPlan:false,studentPrice:null,stations:['阪急豊中駅 徒歩3分'],badge:'new',badgeLabel:'地域最大級',featured:true,url:'https://zoam.jp/',
+    campaign:{confirmed:true,content:'【他ジムからの乗り換えで"クアトロ0"（4/1〜）】入会金¥5,500・セキュリティ登録料¥3,300・翌月会費・翌々月会費がすべて0円！乗り換えなしの場合は翌々月無料なし。定期的に入会金0円キャンペーンも実施中。',source:'公式情報'},
+    address:'大阪府豊中市豊中駅前エリア',mapUrl:'https://maps.google.com/?q=Zoam+FITNESS+豊中',
+    hours:'24時間365日',parking:true,
+    equipment:['パワーラック（3台）','フリーウェイト','有酸素マシン（20台）','マシン（38台）','シャワー','酸素カプセル','コラーゲンマシン','女性専用エリア'],
+    noEquipment:['プール'],
+    plans:[
+      {name:'レギュラー会員',price:'¥7,700',note:'24時間利用'},
+      {name:'インディペンデント',price:'¥4,290',note:'深夜・早朝帯'},
+      {name:'デイ会員',price:'¥6,490',note:'9時〜18時'},
+    ],
+    pros:['豊中駅徒歩3分の好立地','190坪・地域最大級','パワーラック3台','酸素カプセルなど付帯サービスが豊富','女性専用エリアあり'],
+    cons:['入会金¥5,000がやや高め','レギュラー会員は月額¥7,700','学割なし'],
+    summary:'阪急豊中駅から徒歩3分の190坪ジム。マシン38台・有酸素20台・パワーラック3台と北摂最高クラスの設備。酸素カプセル・コラーゲンマシンなど付帯サービスも豊富。コスパ重視のインディペンデントプランなら月額¥4,290。',
+    note:'190坪・パワーラック3台・酸素カプセルあり。設備充実でコスパ高め。'},
+
+  {id:'worldplus-shonai',name:'ワールドプラスジム 庄内店',area:'豊中',price:5470,init:0,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:1,studentPlan:true,studentPrice:4370,stations:['阪急庄内駅 徒歩5分'],badge:'student',badgeLabel:'学割あり',featured:false,url:'https://www.worldplus-gym.com/shop/shonai.html',
+    campaign:{confirmed:true,content:'【5月〜6月30日限定・初月無料キャンペーン】新規・再入会で初月会費0円！入会金・事務手数料も0円。月によって2ヶ月会費無料などのキャンペーンも実施。各店舗ページで毎月の内容を確認。',source:'公式情報'},
+    address:'大阪府豊中市庄内エリア',mapUrl:'https://maps.google.com/?q=ワールドプラスジム+庄内',
+    hours:'24時間365日',parking:false,
+    equipment:['パワーラック','スミスマシン','フリーウェイト（ダンベル50kgまで）','有酸素マシン','シャワー','プロテインサーバー'],
+    noEquipment:['酸素カプセル','プール'],
+    plans:[
+      {name:'一般プラン',price:'¥5,470',note:'税込'},
+      {name:'学生プラン',price:'¥4,370',note:'中・高・大学生対象・入会金0円'},
+      {name:'庄内店限定プラン',price:'¥4,980',note:'庄内店のみ利用可'},
+    ],
+    pros:['入会金・事務手数料0円','学割で月額¥4,370','ダンベル50kgまで対応','スミスマシンあり','2018年大規模リニューアル済'],
+    cons:['パワーラック1台のみ','駐車場なし'],
+    summary:'2018年のオープン以来リニューアルを重ねた豊中エリアのコスパジム。入会金0円・学生月額¥4,370は北摂トップクラスのコスパ。ダンベル50kg・スミスマシンまで揃っており、学生や社会人どちらにもおすすめ。',
+    note:'大規模リニューアル済・ダンベル50kg・スミスマシンあり・学生月額¥4,370'},
+
+  {id:'central-toyonaka',name:'セントラルスポーツ ジムスタ24 豊中駅前',area:'豊中',price:6600,init:5500,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:null,studentPlan:false,studentPrice:null,stations:['阪急豊中駅 徒歩4分'],badge:'popular',badgeLabel:'定番人気',featured:false,url:'https://www.central.co.jp/club/gs-toyonaka/',
+    address:'大阪府豊中市本町1-8-5 アクロスキューブ豊中3F',mapUrl:'https://maps.google.com/?q=セントラルスポーツ+豊中駅前',
+    hours:'マシンジム24時間 / スタジオは時間指定',parking:false,
+    equipment:['マシンジム','フリーウェイト','有酸素マシン','スタジオ','シャワー','Wi-Fi'],
+    noEquipment:['プール','酸素カプセル'],
+    plans:[
+      {name:'ジム24',price:'要確認',note:'人気No.1プラン'},
+      {name:'スタジオ+ジム',price:'要確認',note:'スタジオも使える'},
+    ],
+    pros:['豊中駅徒歩4分','スタジオプログラムが豊富','セントラルスポーツの安心感','マシンジムは24時間'],
+    cons:['入会金¥5,500','学割なし','プールなし'],
+    summary:'大手チェーン「セントラルスポーツ」の24時間ジム特化型店舗。スタジオプログラムも利用可能なため、マシントレだけでなくヨガ・ピラティスも楽しみたい人に向いている。豊中駅から徒歩4分の好立地。',
+    note:'スタジオ・マシンジム・フリーウェイト完備。スタジオプログラムも使える。'},
+
+  {id:'anytime-toyonaka',name:'エニタイムフィットネス 阪急豊中駅前店',area:'豊中',price:7920,init:5500,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:1,studentPlan:false,studentPrice:null,stations:['阪急豊中駅 徒歩すぐ'],badge:'popular',badgeLabel:'駅直結',featured:false,url:'https://www.anytimefitness.co.jp/hankyu-toyonaka-ekimae/',
+    campaign:{confirmed:true,content:'毎月キャンペーンを実施。新規オープン・周年月は特に入会金・月会費が大幅割引になる傾向。店舗ごとに内容が異なるため各店舗ページで確認必須。',source:'公式サイト・現役スタッフ情報'},
+    address:'大阪府豊中市 阪急豊中駅前',mapUrl:'https://maps.google.com/?q=エニタイムフィットネス+阪急豊中駅前',
+    hours:'24時間365日',parking:false,
+    equipment:['パワーラック','フリーウェイト','有酸素マシン','マシン','シャワー'],
+    noEquipment:['プール','スタジオ'],
+    plans:[{name:'通常会員',price:'¥7,920',note:'全店舗利用可'}],
+    pros:['阪急豊中駅直結','全世界4,800店舗が使える','引越しても継続しやすい','安定したブランド品質'],
+    cons:['月額が高め（¥7,920）','入会金¥5,500','学割なし'],
+    summary:'アメリカ発祥の世界最大手24時間フィットネスチェーン。阪急豊中駅から徒歩すぐの好立地。月額は高めだが、全世界4,800店舗が使えるため出張・旅行・引越し後も継続しやすい。北摂に7店舗あり最寄りを選べる。',
+    note:'全世界4,800店舗利用可。出張・旅行でも使える。'},
+
+  {id:'powerhouse',name:'POWERHOUSE GYM ノース大阪（豊中）',area:'豊中',price:11000,init:11000,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:5,studentPlan:false,studentPrice:null,stations:['豊中エリア'],badge:'popular',badgeLabel:'ガチ勢向け',featured:true,url:'https://northosaka.powerhousegym.jp/',
+    address:'大阪府豊中市',mapUrl:'https://maps.google.com/?q=POWERHOUSE+GYM+ノース大阪',
+    hours:'24時間',parking:true,
+    equipment:['パワーラック（5台）','フリーウェイト（高重量対応）','プレートロード式マシン多数','有酸素マシン','シャワー'],
+    noEquipment:['スタジオ','プール','エステ設備'],
+    plans:[{name:'通常会員',price:'¥11,000',note:'入会金¥11,000'}],
+    pros:['北摂最多パワーラック5台','高重量対応設備が充実','ボディビル・フィジーク選手も利用','本格的なトレーニング環境'],
+    cons:['月額・入会金ともに高め','初心者には敷居が高い','学割なし'],
+    summary:'世界的ブランド「POWERHOUSE GYM」の北大阪店。パワーラック5台・プレートロード式マシン多数と北摂最強の本格トレーニング環境。ボディビル・フィジーク競技者も通う。月額¥11,000と高めだが本気で結果を出したい人向け。',
+    note:'北摂最多パワーラック5台。本格ボディビル系の環境。'},
+
+  {id:'befit-minoh',name:'Be-fit light24 箕面',area:'箕面',price:4180,init:3300,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:null,studentPlan:false,studentPrice:null,stations:['北大阪急行 箕面船場阪大前駅 近く'],badge:'cheap',badgeLabel:'コスパ良し',featured:false,url:'https://be-fit-light.jp/minoh/',
+    address:'大阪府箕面市',mapUrl:'https://maps.google.com/?q=Be-fit+light24+箕面',
+    hours:'24時間365日',parking:true,
+    equipment:['パワーラック','フリーウェイト','マシン（100台以上）','有酸素マシン','シャワー','屋外フィットネスエリア'],
+    noEquipment:['エステ設備'],
+    plans:[{name:'通常会員',price:'¥4,180',note:'入会金¥3,300'}],
+    pros:['マシン100台以上','月額¥4,180とコスパ抜群','屋外フィットネスエリアあり','隣に温泉「水春」','箕面船場阪大前駅から近い'],
+    cons:['入会金¥3,300が必要','学割なし'],
+    summary:'箕面エリアで最大級のマシン数（100台以上）を誇るコスパジム。月額¥4,180でパワーラック・シャワー・屋外エリアまで使える。隣の温泉施設「水春」でトレ後に温泉というルーティンが人気。北大阪急行の延伸で箕面船場阪大前駅からのアクセスも向上。',
+    campaign:{confirmed:true,content:'【5月1日〜5月31日】①入会金＋事務手数料→0円 ②紹介入会で紹介者・入会者ともに月会費¥1,000OFF ③水素水会員最大2ヶ月間0円。',source:'公式情報'},
+    note:'マシン100台以上・温泉「水春」隣接・屋外フィットネスエリアあり'},
+
+  {id:'zoam-minoh',name:'Zoam FITNESS 箕面店',area:'箕面',price:4290,init:5000,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:2,studentPlan:false,studentPrice:null,stations:['北大阪急行 箕面萱野駅 近く'],badge:'new',badgeLabel:'話題の新店',featured:false,url:'https://zoam.jp/',
+    address:'大阪府箕面市',mapUrl:'https://maps.google.com/?q=Zoam+FITNESS+箕面',
+    hours:'24時間365日',parking:true,
+    equipment:['パワーラック（2台）','フリーウェイト','有酸素マシン','マシン','シャワー','コラーゲンマシン'],
+    noEquipment:['プール'],
+    plans:[{name:'インディペンデント',price:'¥4,290',note:'深夜・早朝帯'}],
+    pros:['箕面萱野駅近く','パワーラック2台','みのおエフエム出演の話題店','駐車場あり'],
+    cons:['入会金¥5,000','学割なし'],
+    summary:'2025年に話題となったZoam FITNESSの箕面店。みのおエフエムにも出演。箕面萱野駅近くで駐車場完備。パワーラック2台・シャワーありで設備も充実。',
+    note:'みのおエフエム出演の話題店'},
+
+  {id:'underground',name:'アンダーグラウンドジム 箕面',area:'箕面',price:11000,init:0,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:null,studentPlan:false,studentPrice:null,stations:['箕面イオンモール 車5分'],badge:null,badgeLabel:'',featured:false,url:'https://underground-gym.jp/',
+    address:'大阪府箕面市',mapUrl:'https://maps.google.com/?q=アンダーグラウンドジム+箕面',
+    hours:'24時間365日',parking:true,
+    equipment:['パワーラック','フリーウェイト（TECHNOGYM製）','有酸素マシン（TV/Netflix対応19インチ）','シャワー','プロテイン販売'],
+    noEquipment:['スタジオ','プール'],
+    plans:[
+      {name:'フルタイム',price:'¥11,000',note:'24時間利用'},
+      {name:'デイタイム',price:'¥9,900',note:'時間帯指定'},
+      {name:'ビジター',price:'¥3,300',note:'1回利用'},
+    ],
+    pros:['TECHNOGYM製の最高水準マシン','ヴィンテージ・インダストリアル内装','有酸素マシンでNetflix視聴可','入会金0円','雰囲気重視派に唯一無二'],
+    cons:['月額¥11,000と高め','箕面イオンから車5分（徒歩圏外）','学割なし'],
+    summary:'工場跡地をイメージしたヴィンテージ・インダストリアル内装が特徴的な箕面の本格ジム。全マシンTECHNOGYM製という高水準な設備。有酸素マシンでNetflixやTVを楽しめる。デイタイムプラン¥9,900・入会金0円。',
+    note:'TECHNOGYM製マシン・工場風の本格トレ空間・デイタイムプラン¥9,900あり。'},
+
+  {id:'tipness-ishibashi',name:'ティップネス 石橋阪大前24hours',area:'池田',price:8800,init:3300,shower:true,freeWeight:true,powerRack:false,sqm:null,powerRacks:0,studentPlan:false,studentPrice:null,stations:['阪急石橋阪大前駅 徒歩4分'],badge:null,badgeLabel:'',featured:false,url:'https://tip.tipness.co.jp/shop_info/SHP024/',
+    address:'大阪府池田市 石橋阪大前エリア',mapUrl:'https://maps.google.com/?q=ティップネス+石橋阪大前',
+    hours:'マシンジム24時間 / スタジオは時間指定',parking:false,
+    equipment:['マシンジム','フリーウェイト','有酸素マシン','スタジオ','シャワー'],
+    noEquipment:['パワーラック','プール'],
+    plans:[{name:'通常会員',price:'¥8,800',note:'入会金¥3,300'}],
+    pros:['阪急石橋阪大前駅から徒歩4分','スタジオプログラムが充実','大阪大学の学生が多く通う','マシンジムは24時間対応'],
+    cons:['パワーラックなし','月額¥8,800','学割なし'],
+    summary:'池田エリア唯一の24時間ジム。阪急石橋阪大前駅から徒歩4分で、大阪大学豊中キャンパスに近く阪大生が多く利用。スタジオプログラムも豊富で、マシントレ以外も楽しみたい人向け。',
+    note:'スタジオプログラム豊富・マシンエリア24時間対応。阪大生に近い。'},
+
+  {id:'fitplace-esaka',name:'FIT PLACE24 江坂',area:'吹田',price:3278,init:0,shower:false,freeWeight:false,powerRack:true,sqm:null,powerRacks:3,studentPlan:false,studentPrice:null,stations:['吹田エリア・江坂駅近く'],badge:'cheap',badgeLabel:'格安',featured:false,url:'https://fitplace.jp/gyms/esaka/',
+    address:'大阪府吹田市 江坂エリア',mapUrl:'https://maps.google.com/?q=FIT+PLACE24+江坂',
+    hours:'24時間365日',parking:false,
+    equipment:['パワーラック（3台）','マシン','水素水'],
+    noEquipment:['シャワー','フリーウェイト'],
+    plans:[{name:'通常会員',price:'¥3,278',note:'入会金0円'}],
+    pros:['月額¥3,278・入会金0円で最安クラス','パワーラック3台と台数が多い','24時間365日利用可'],
+    cons:['シャワーなし','フリーウェイトなし','設備はシンプル'],
+    summary:'月額¥3,278・入会金0円という北摂最安水準のジム。シャワーなし・フリーウェイトなしというシンプルな設備だが、パワーラックは3台確保。スクワット・ベンチプレスだけ安くやりたい人には意外と優秀な選択肢。',
+    campaign:{confirmed:true,content:'【GWキャンペーン〜5/11(月)23:59まで】①2ヶ月目月会費無料 ②入会金¥5,500→無料 ③水素水飲み放題（初月＋2ヶ月目） ④オリジナルボトルプレゼント。公式LINEを友達追加で詳細確認。',source:'公式情報'},
+    note:null},
+
+  {id:'joyfit-esaka',name:'JOYFIT24 江坂',area:'吹田',price:6578,init:5500,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:1,studentPlan:false,studentPrice:null,stations:['江坂駅'],badge:null,badgeLabel:'',featured:false,url:'https://joyfit.jp/esaka/',
+    address:'大阪府吹田市 江坂エリア',mapUrl:'https://maps.google.com/?q=JOYFIT24+江坂',
+    hours:'24時間365日',parking:false,
+    equipment:['パワーラック','フリーウェイト','有酸素マシン','マシン','シャワー'],
+    noEquipment:['プール','スタジオ'],
+    plans:[{name:'通常会員',price:'¥6,578',note:'入会金¥5,500'}],
+    pros:['江坂駅アクセス良好','パワーラックあり','シャワー完備','JOYFIT全国店舗利用可'],
+    cons:['入会金¥5,500','学割なし'],
+    summary:'江坂駅近くの24時間ジム。パワーラック・フリーウェイト・シャワーを標準装備。JOYFITチェーンなので全国店舗も利用可能。',
+    campaign:{confirmed:true,content:'【30名限定・残り10名！】登録事務手数料¥3,300無料＋5月会費無料。他クラブからの乗り換えで翌月会費も0円。江坂店会員の紹介で紹介者・入会者ともに翌月会費0円（乗り換え割との併用不可）。',source:'公式情報'},
+    note:null},
+];
+
+// Fill remaining gyms with basic data for the card list
+const allGyms=[
+  ...gyms,
+  {id:'worldplus-sakurazuka',name:'ワールドプラスジム 豊中桜塚店',area:'豊中',price:5470,init:5500,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:null,studentPlan:false,studentPrice:null,stations:['阪急岡町駅 徒歩8分'],badge:null,badgeLabel:'',featured:false,url:'https://www.worldplus-gym.com/shop/toyonaka-sakurazuka.html',note:'ダンベル43kgまで・タオル無料・プロテインサーバーあり',
+    campaign:{confirmed:true,content:'【5月〜6月限定】入会次月より3ヶ月会費（最大¥19,710分）無料！入会金¥5,500＋事務手数料¥3,300→無料。月会費も¥8,800→ずっと¥6,570に。2人以上同時入会またはジム乗り換えでAmazonギフト¥2,000プレゼント。プロテインサーバー初月・翌月飲み放題。1週間無料体験あり。',source:'公式情報'}},
+  {id:'cospa-shoji',name:'コ・ス・パ 豊中少路24',area:'豊中',price:7700,init:5500,shower:true,freeWeight:true,powerRack:false,sqm:null,powerRacks:0,studentPlan:false,studentPrice:null,stations:['大阪モノレール 少路駅 すぐ'],badge:null,badgeLabel:'',featured:false,url:'https://www.cospa-wellness.co.jp/cospa/toyonakashoji/',note:'プール・スタジオも使える総合型。'},
+  {id:'anytime-toyonaka-higashi',name:'エニタイムフィットネス 豊中東店',area:'豊中',price:7920,init:5500,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:1,studentPlan:false,studentPrice:null,stations:['北大阪急行 桃山台駅 車6分'],badge:null,badgeLabel:'',featured:false,url:'https://www.anytimefitness.co.jp/toyonakahigashi/',note:null,
+    campaign:{confirmed:true,content:'【5月キャンペーン〜5/31まで】5月会費→日割り、6月会費→50%OFF（約¥3,960お得）。別途入会事務手数料¥5,500が必要。',source:'公式情報'}},
+  {id:'anytime-mino-sakura',name:'エニタイムフィットネス 箕面桜店',area:'箕面',price:7920,init:5500,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:1,studentPlan:false,studentPrice:null,stations:['阪急箕面線 牧落駅 徒歩4分'],badge:null,badgeLabel:'',featured:false,url:'https://www.anytimefitness.co.jp/minosakura/',note:null,
+    campaign:{confirmed:true,content:'翌月会費が無料！入会金と初月会費のみで入会できるキャンペーン実施中。',source:'公式情報'}},
+  {id:'anytime-mino-gein',name:'エニタイムフィットネス 箕面外院店',area:'箕面',price:7920,init:5500,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:1,studentPlan:false,studentPrice:null,stations:['箕面市外院エリア'],badge:null,badgeLabel:'',featured:false,url:'https://www.anytimefitness.co.jp/minoogein/',note:null,
+    campaign:{confirmed:true,content:'【5月1日〜5月31日限定】当月会費→日割り、翌月会費→半額。セキュリティーキー¥5,500。',source:'公式情報'}},
+  {id:'anytime-mino-fune',name:'エニタイムフィットネス 箕面船場店',area:'箕面',price:7600,init:5500,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:1,studentPlan:false,studentPrice:null,stations:['北大阪急行 箕面船場阪大前駅 徒歩3分'],badge:null,badgeLabel:'',featured:false,url:'https://www.anytimefitness.co.jp/mino/',note:null,
+    campaign:{confirmed:true,content:'【5月31日まで】5月会費→日割り、6月会費→500円！セキュリティーキー¥5,500。江坂店と共通キャンペーン。',source:'公式情報'}},
+  {id:'anytime-esaka',name:'エニタイムフィットネス 江坂店',area:'吹田',price:7600,init:5500,shower:true,freeWeight:true,powerRack:true,sqm:null,powerRacks:2,studentPlan:false,studentPrice:null,stations:['地下鉄御堂筋線 江坂駅 8・9番出口 徒歩1分'],badge:'popular',badgeLabel:'駅1分',featured:false,url:'https://www.anytimefitness.co.jp/esaka/',note:'江坂オッツ6F・駅から徒歩1分の好立地',
+    campaign:{confirmed:true,content:'【5月31日まで】5月会費→日割り、6月会費→500円！セキュリティーキー¥5,500。',source:'公式情報'}},
+];
+
+let cArea='all',cCond='all',cSort='price';
+function setArea(a,btn){cArea=a;document.querySelectorAll('#area-filters .fbtn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render();}
+function setCond(c,btn){cCond=c;document.querySelectorAll('#cond-filters .fbtn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render();}
+function sortGyms(v){cSort=v;render();}
+function filtered(){return allGyms.filter(g=>{
+  if(cArea!=='all'&&g.area!==cArea)return false;
+  if(cCond==='cheap')return g.price<=5000;
+  if(cCond==='shower')return g.shower;
+  if(cCond==='no_init')return g.init===0;
+  if(cCond==='free_weight')return g.freeWeight;
+  if(cCond==='power_rack')return g.powerRack;
+  if(cCond==='student')return g.studentPlan;
+  return true;
+});}
+function sorted(l){return[...l].sort((a,b)=>{
+  if(cSort==='price')return a.price-b.price;
+  if(cSort==='init')return a.init-b.init;
+  if(cSort==='racks')return(b.powerRacks||0)-(a.powerRacks||0);
+  if(cSort==='name')return a.name.localeCompare(b.name,'ja');
+  return 0;
+});}
+
+function hasDetail(id){return gyms.some(g=>g.id===id);}
+
+function render(){
+  const list=sorted(filtered());
+  const grid=document.getElementById('gym-grid');
+  document.getElementById('count-row').innerHTML=`<strong>${list.length}</strong> 件表示中`;
+  if(!list.length){grid.innerHTML='<div class="empty">条件に合うジムがありません</div>';return;}
+  grid.innerHTML=list.map(g=>{
+    const bd=g.badge?`<span class="badge badge-${g.badge}">${g.badgeLabel}</span>`:'';
+    const tags=[
+      `<span class="tag ${g.shower?'on':'off'}">シャワー</span>`,
+      `<span class="tag ${g.freeWeight?'on':'off'}">フリーウェイト</span>`,
+      `<span class="tag ${g.powerRack?'on':'off'}">パワーラック</span>`,
+      g.init===0?`<span class="tag on">入会金0円</span>`:`<span class="tag">入会金 ¥${g.init.toLocaleString()}</span>`
+    ].join('');
+    const sq=g.sqm!==null?`<div class="spec"><span class="spec-k">広さ</span><span class="spec-v">${g.sqm}坪</span></div>`:`<div class="spec"><span class="spec-k">広さ</span><span class="spec-u">要確認</span></div>`;
+    const rk=g.powerRacks===null?`<div class="spec"><span class="spec-k">パワーラック</span><span class="spec-u">要確認</span></div>`:g.powerRacks===0?`<div class="spec"><span class="spec-k">パワーラック</span><span class="spec-u">なし</span></div>`:`<div class="spec"><span class="spec-k">パワーラック</span><span class="spec-v">${g.powerRacks}台</span></div>`;
+    const initD=g.init===0?`<span class="init-free">入会金 無料</span>`:`入会金 ¥${g.init.toLocaleString()}<span class="campaign-hint"> ※キャンペーンで無料になる場合あり</span>`;
+    const sb=g.studentPlan&&g.studentPrice?`<div class="student-banner">🎓 学割あり：月額 ¥${g.studentPrice.toLocaleString()}（要学生証）</div>`:'';
+    const cb=g.campaign?.confirmed?`<div class="campaign-banner">🎉 キャンペーンあり：${g.campaign.content}</div>`:'';
+    const nb=g.note?`<div class="note">💡 ${g.note}</div>`:'';
+    const detailBtn=hasDetail(g.id)?`<button class="cta-detail" onclick="showGymDetail('${g.id}')">詳細を見る</button>`:'';
+    return`<div class="gym-card${g.featured?' featured':''}">
+      <div class="card-top"><div class="card-left"><div class="name-row"><span class="gym-name">${g.name}</span><span class="area-pill">${g.area}</span>${bd}</div></div>
+      <div class="price-block"><div><span class="price-main">¥${g.price.toLocaleString()}</span><span class="price-unit">/月</span></div><div class="init-fee">${initD}</div></div></div>
+      ${sb}${cb}<div class="tag-row">${tags}</div><div class="specs-row">${sq}${rk}</div>${nb}
+      <div class="card-bottom"><span class="station">📍 ${g.stations.join('・')}</span>
+      <div class="btn-row">${detailBtn}<a class="cta-link" href="${g.url}" target="_blank" rel="noopener">公式サイト →</a></div></div>
+    </div>`;
+  }).join('');
+}
+render();
+
+function showGymDetail(id){
+  const g=gyms.find(x=>x.id===id);
+  if(!g)return;
+  const initD=g.init===0?`<span class="init-free">入会金 無料</span>`:`入会金 ¥${g.init.toLocaleString()}`;
+  const sb=g.studentPlan&&g.studentPrice?`<div class="detail-student">🎓 学割あり：月額 ¥${g.studentPrice.toLocaleString()}（中・高・大学生対象・要学生証）</div>`:'';
+  const equipYes=(g.equipment||[]).map(e=>`<span class="equip-tag yes">✓ ${e}</span>`).join('');
+  const equipNo=(g.noEquipment||[]).map(e=>`<span class="equip-tag no">${e}</span>`).join('');
+  const planRows=(g.plans||[]).map(p=>`<tr><td>${p.name}</td><td class="price-highlight">${p.price}</td><td>${p.note}</td></tr>`).join('');
+  const prosList=(g.pros||[]).map(p=>`<li>${p}</li>`).join('');
+  const consList=(g.cons||[]).map(c=>`<li>${c}</li>`).join('');
+  // nearby gyms (same area, different gym)
+  const nearby=allGyms.filter(x=>x.area===g.area&&x.id!==g.id).slice(0,3);
+  const nearbyHtml=nearby.map(n=>`<div class="nearby-item" onclick="${hasDetail(n.id)?`showGymDetail('${n.id}')`:`window.open('${n.url}','_blank')`}"><div><div class="nearby-name">${n.name}</div><div class="nearby-price">月額 ¥${n.price.toLocaleString()}</div></div><span class="nearby-arrow">→</span></div>`).join('');
+
+  document.getElementById('gym-detail-content').innerHTML=`
+    <button class="back-btn" onclick="backToCompare()">← ジム一覧に戻る</button>
+    <div class="detail-hero">
+      <div class="detail-hero-top">
+        <div>
+          <div class="detail-area">📍 ${g.area}エリア</div>
+          <div class="detail-name">${g.name}</div>
+        </div>
+        <div class="detail-price-block">
+          <div class="detail-price">¥${g.price.toLocaleString()}</div>
+          <div class="detail-price-unit">/月（最安プラン）</div>
+          <div class="detail-init">${g.init===0?`<span class="init-free">入会金 無料</span>`:`入会金 ¥${g.init.toLocaleString()} <span class="campaign-hint">※キャンペーンで無料になる場合あり</span>`}</div>
+        </div>
+      </div>
+      ${sb}
+      ${g.campaign?.confirmed
+        ?`<div class="campaign-banner" style="margin-top:12px;">🎉 キャンペーンあり：${g.campaign.content}<br><span style="font-size:11px;opacity:.7">情報元：${g.campaign.source}</span></div>`
+        :`<div class="campaign-empty" style="margin-top:12px;">キャンペーン情報：現在確認中です。公式サイトで最新情報をご確認ください。<br>【管理者メモ】ここに確認したキャンペーン内容を追記してください</div>`
+      }
+      <div class="detail-cta">
+        <a class="btn-official" href="${g.url}" target="_blank" rel="noopener">公式サイトを見る →</a>
+        <a class="btn-map" href="${g.mapUrl}" target="_blank" rel="noopener">地図を見る 📍</a>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h2>基本情報</h2>
+      <div class="detail-grid">
+        <div class="detail-stat"><div class="detail-stat-label">営業時間</div><div class="detail-stat-value">${g.hours}</div></div>
+        <div class="detail-stat"><div class="detail-stat-label">シャワー</div><div class="detail-stat-value ${g.shower?'good':'bad'}">${g.shower?'あり':'なし'}</div></div>
+        <div class="detail-stat"><div class="detail-stat-label">駐車場</div><div class="detail-stat-value ${g.parking?'good':'bad'}">${g.parking?'あり':'なし'}</div></div>
+        <div class="detail-stat"><div class="detail-stat-label">パワーラック</div><div class="detail-stat-value ${g.powerRacks>0?'good':'bad'}">${g.powerRacks===null?'要確認':g.powerRacks===0?'なし':g.powerRacks+'台'}</div></div>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h2>このジムについて</h2>
+      <div class="note" style="font-size:14px;line-height:1.9;">${g.summary}</div>
+    </div>
+
+    <div class="detail-section">
+      <h2>設備・機器</h2>
+      <div class="equip-grid">${equipYes}${equipNo}</div>
+    </div>
+
+    <div class="detail-section">
+      <h2>料金プラン</h2>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <table class="plan-table">
+          <thead><tr><th>プラン名</th><th>月額</th><th>備考</th></tr></thead>
+          <tbody>${planRows}</tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h2>メリット・デメリット</h2>
+      <div class="pros-cons">
+        <div class="pros"><h3>👍 メリット</h3><ul>${prosList}</ul></div>
+        <div class="cons"><h3>👎 デメリット</h3><ul>${consList}</ul></div>
+      </div>
+    </div>
+
+    ${nearbyHtml?`<div class="detail-section"><h2>${g.area}エリアの他のジム</h2><div class="nearby-list">${nearbyHtml}</div></div>`:''}
+  `;
+
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.getElementById('tab-gym-detail').classList.add('active');
+  document.getElementById('hero-area').style.display='none';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function backToCompare(){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.getElementById('tab-compare').classList.add('active');
+  document.getElementById('hero-area').style.display='';
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>{b.classList.toggle('active',i===0);});
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function showTab(tab){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+tab).classList.add('active');
+  document.querySelectorAll('.tab-btn')[['compare','articles','about'].indexOf(tab)].classList.add('active');
+  document.getElementById('hero-area').style.display=tab==='compare'?'':'none';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+const articles={
+  ranking_cheap:{title:'北摂で月額が安い24時間ジム ランキング TOP5【2026年】',meta:'2026年4月更新 | 北摂ジムナビ編集部',html:`<p>「とにかく安くジムに通いたい」という人向けに月額料金で比較しました。</p><h2>ランキング</h2><div class="ranking-item"><div class="rank-num">1</div><div><div class="rank-name">chocoZAP / FIT PLACE24 江坂</div><div class="rank-price">月額 ¥3,278・入会金0円</div><div class="rank-desc">どちらも入会金0円で最安クラス。シャワーなし・本格フリーウェイトなし。手軽さ最優先の人向け。</div></div></div><div class="ranking-item"><div class="rank-num">2</div><div><div class="rank-name">Be-fit light24 箕面</div><div class="rank-price">月額 ¥4,180・入会金 ¥3,300</div><div class="rank-desc">箕面エリアで月額4,000円台でパワーラックあり・シャワーあり・マシン100台以上。隣の温泉「水春」も魅力。</div></div></div><div class="ranking-item"><div class="rank-num">3</div><div><div class="rank-name">Zoam FITNESS 豊中店 / 箕面店</div><div class="rank-price">月額 ¥4,290・入会金 ¥5,000</div><div class="rank-desc">月額安い・190坪・パワーラック複数台。設備は北摂最強クラス。</div></div></div><div class="ranking-item"><div class="rank-num">4</div><div><div class="rank-name">ワールドプラスジム（学生）</div><div class="rank-price">学割月額 ¥4,370・入会金0円</div><div class="rank-desc">学生証があれば入会金無料・月額¥4,370。設備も充実。</div></div></div><div class="ranking-item"><div class="rank-num">5</div><div><div class="rank-name">ワールドプラスジム（一般）</div><div class="rank-price">月額 ¥5,470・入会金0円</div><div class="rank-desc">入会金0円でフリーウェイト・シャワー完備。</div></div></div><div class="highlight-box"><p>🏆 安さ重視 → chocoZAP<br>💪 設備と安さのバランス → Zoam FITNESS<br>🎓 学生なら → ワールドプラスジム（学割）</p></div>`},
+  guide_student:{title:'阪大・関大・近大生必見！北摂エリアの学割ジム完全ガイド',meta:'2026年4月更新 | 北摂ジムナビ編集部',html:`<p>北摂エリアには阪大・関大・近大・産大などの学生が多く住んでいます。学割情報と通いやすさをまとめました。</p><h2>学割があるジム</h2><h3>ワールドプラスジム 庄内店（豊中）/ 吹田店</h3><p>学生限定プラン：月額 ¥4,370（中・高・大学生対象）。入会金・事務手数料0円キャンペーンも定期実施。ダンベル50kg・スミスマシン完備。</p><h2>学割はないけど学生に人気のジム</h2><h3>Be-fit light24 箕面</h3><p>阪大豊中・箕面キャンパスから通いやすい。月額¥4,180でパワーラックあり・マシン100台以上。トレ後に隣の温泉「水春」が使える。</p><h3>Zoam FITNESS 豊中店</h3><p>阪急豊中駅から徒歩3分・190坪。月額¥4,290で設備最高クラス。</p><div class="highlight-box"><p>💡 学生証持ちならまずワールドプラスジムの学割を確認。次点でBe-fit light24かZoam FITNESSがおすすめ。</p></div>`},
+  guide_powerrack:{title:'本格トレーニングしたい人向け。北摂のパワーラックが多いジムまとめ',meta:'2026年4月更新 | 北摂ジムナビ編集部',html:`<p>スクワット・デッドリフト・ベンチプレスを毎回やりたい人にとって「パワーラック台数」は死活問題。北摂でパワーラックが多いジムをまとめました。</p><div class="ranking-item"><div class="rank-num">5台</div><div><div class="rank-name">POWERHOUSE GYM ノース大阪（豊中）</div><div class="rank-price">月額 ¥11,000</div><div class="rank-desc">北摂最多。本格ボディビル系で月額は高めだが本気勢向け。</div></div></div><div class="ranking-item"><div class="rank-num">3台</div><div><div class="rank-name">Zoam FITNESS 豊中店</div><div class="rank-price">月額 ¥4,290</div><div class="rank-desc">月額安いのにパワーラック3台。190坪で混雑しにくい。</div></div></div><div class="ranking-item"><div class="rank-num">3台</div><div><div class="rank-name">FIT PLACE24 江坂</div><div class="rank-price">月額 ¥3,278・入会金0円</div><div class="rank-desc">最安クラスでパワーラック3台。シャワーなし・フリーウェイトなし。</div></div></div><div class="highlight-box"><p>🏋️ コスパ重視ならZoam FITNESS豊中店（3台・月¥4,290）。月額気にしないならPOWERHOUSE GYM。</p></div>`},
+  compare_chains:{title:'エニタイムvsワールドプラスvsZoam。北摂で選ぶならどれ？',meta:'2026年4月更新 | 北摂ジムナビ編集部',html:`<p>北摂エリアで店舗数が多い3チェーンを徹底比較します。</p><h2>料金比較</h2><table><thead><tr><th>項目</th><th style="text-align:center">エニタイム</th><th style="text-align:center">ワールドプラス</th><th style="text-align:center">Zoam</th></tr></thead><tbody><tr><td>月額</td><td style="text-align:center">¥7,920</td><td style="text-align:center">¥5,470〜</td><td style="text-align:center">¥4,290</td></tr><tr><td>入会金</td><td style="text-align:center">¥5,500</td><td style="text-align:center">¥0〜</td><td style="text-align:center">¥5,000</td></tr><tr><td>学割</td><td style="text-align:center">なし</td><td style="text-align:center">¥4,370</td><td style="text-align:center">なし</td></tr><tr><td>他店利用</td><td style="text-align:center">全世界4,800+</td><td style="text-align:center">全国約150店</td><td style="text-align:center">2店舗のみ</td></tr><tr><td>北摂店舗数</td><td style="text-align:center">7店舗</td><td style="text-align:center">3店舗</td><td style="text-align:center">2店舗</td></tr></tbody></table><div class="highlight-box"><p>📌 北摂限定ならZoam FITNESS が月額・設備のバランス最強。旅行や出張でも使いたいならエニタイムフィットネス一択。</p></div>`}
+};
+
+function showArticle(id){
+  const a=articles[id];if(!a)return;
+  document.getElementById('articles-list').style.display='none';
+  document.getElementById('article-detail').style.display='block';
+  document.getElementById('article-content').innerHTML=`<h1>${a.title}</h1><div class="meta">${a.meta}</div>${a.html}`;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function backToArticles(){
+  document.getElementById('articles-list').style.display='';
+  document.getElementById('article-detail').style.display='none';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
